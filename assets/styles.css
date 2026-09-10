@@ -226,6 +226,19 @@ body {
   font-weight: 500;
 }
 
+  .brand-text-2 h1 {
+    width: 90px;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--text-primary);
+    line-height: 1.1;
+}
+  .brand-text-2 h1 span {
+    color: var(--accent-green);
+}
+
 /* Search Box */
 .search-box {
   flex: 1;
@@ -1280,6 +1293,14 @@ body {
   .brand-text h1 span {
     display: none;
   }
+
+  .brand-text2 h1 {
+    width: 90px;
+    font-size: 1rem;
+}
+.brand-text2 h1 span {
+  color: var(--accent-green);
+}
 
   .cards-list {
     padding: 12px;
