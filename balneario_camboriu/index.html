@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balneário Camboriú Explorer | Guia Interativo de Pontos Turísticos</title>
+  <meta name="description" content="Explore os principais pontos turísticos de Balneário Camboriú com detalhes completos, links úteis e design moderno.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS (shared by every city page) -->
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div id="app" class="app-container">
+    <!-- Header Navigation -->
+    <header class="app-header">
+      <div class="cities-nav" id="citiesNav">
+        <a href="../index.html" class="back-home-link" title="Voltar para todas as cidades">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Cidades</span>
+        </a>
+
+        <!-- Menu hambúrguer "Cidades" (visível só em telas menores) -->
+        <div class="cities-menu" id="citiesMenu">
+          <button id="citiesMenuBtn" class="cities-menu-btn" type="button" aria-haspopup="true" aria-expanded="false" title="Trocar de cidade">
+            <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <span>Cidades</span>
+          </button>
+
+          <div class="cities-dropdown" id="citiesDropdown" role="menu">
+            <a href="../index.html" class="cities-dropdown-item cities-dropdown-home" role="menuitem">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 10.5 12 3l9 7.5"/>
+                <path d="M5 9.5V21h14V9.5"/>
+              </svg>
+              <span>Todas as cidades</span>
+            </a>
+            <a href="../curitiba/index.html" class="cities-dropdown-item" role="menuitem">Curitiba</a>
+            <a href="../brusque/index.html" class="cities-dropdown-item" role="menuitem">Brusque</a>
+            <span class="cities-dropdown-divider"></span>
+            <span class="cities-dropdown-item active" role="menuitem" aria-current="page">Balneário Camboriú</span>
+            <a href="../gramado/index.html" class="cities-dropdown-item" role="menuitem">Gramado</a>
+            <a href="../canela/index.html" class="cities-dropdown-item" role="menuitem">Canela</a>
+            <a href="../florianopolis/index.html" class="cities-dropdown-item" role="menuitem">Florianópolis</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand">
+        <div class="brand-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Balneário Camboriú<span>Explorer</span></h1>
+          <span class="tagline">Guia Interativo da Cidade</span>
+        </div>
+      </div>
+
+      <!-- Quick Search -->
+      <div class="search-box">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Buscar por ponto turístico, bairro ou atração..." aria-label="Buscar local">
+        <button id="clearSearchBtn" class="clear-search hidden" title="Limpar busca">&times;</button>
+      </div>
+
+      <!-- Header Controls -->
+      <div class="header-actions">
+        <!-- Theme Toggle Switch -->
+        <button id="themeToggleBtn" class="btn btn-icon theme-toggle" title="Alternar Modo Escuro/Claro">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Filters Bar -->
+    <nav class="filter-bar">
+      <div class="category-menu" id="categoryMenu">
+        <button id="categoryMenuBtn" class="category-menu-btn" type="button" aria-haspopup="true" aria-expanded="false" title="Filtrar por categoria">
+          <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <span>Categorias:</span>
+          <span id="categoryMenuLabel" class="category-menu-current">Todos</span>
+          <svg class="category-menu-caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+
+        <div class="category-pills" id="categoryFilters" role="menu">
+          <!-- Dynamically generated category pills will appear here -->
+        </div>
+      </div>
+
+      <div class="sorting-controls">
+        <label for="sortSelect">Ordenar por:</label>
+        <select id="sortSelect" class="custom-select">
+          <option value="route">Nosso Roteiro</option>
+          <option value="popular">Mais Populares</option>
+          <option value="name">Nome (A-Z)</option>
+          <option value="category">Categoria</option>
+        </select>
+      </div>
+    </nav>
+
+    <!-- Main Workspace Layout -->
+    <main class="main-layout">
+      <!-- Sidebar / Cards View -->
+      <aside class="sidebar" id="sidebar">
+        <!-- Cards List Container -->
+        <div class="cards-list" id="spotsList">
+          <!-- Dynamically generated spot cards will appear here -->
+        </div>
+      </aside>
+
+    </main>
+
+    <!-- Location Detail Modal -->
+    <div id="detailModal" class="modal-backdrop hidden" aria-hidden="true" role="dialog">
+      <div class="modal-card">
+        <button id="closeModalBtn" class="modal-close-btn" title="Fechar Modal">&times;</button>
+
+        <div class="modal-hero">
+          <img id="modalImage" src="" alt="Foto do Ponto Turístico" loading="lazy">
+          <div class="modal-hero-overlay">
+            <span id="modalCategory" class="badge-category">Categoria</span>
+            <h2 id="modalTitle">Nome do Ponto Turístico</h2>
+            <div class="modal-rating" id="modalRating">★★★★★ 4.9 (2.4k avaliações)</div>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <!-- Info Badges -->
+          <div class="info-grid">
+            <div class="info-card">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <div>
+                <strong>Horário</strong>
+                <span id="modalHours">Ter a Dom: 06h às 19h30</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <strong>Endereço</strong>
+                <span id="modalAddress">Av. Prof. Lothário Meissner, s/n - Jardim Botânico</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+              <div>
+                <strong>Entrada</strong>
+                <span id="modalPrice">Gratuita</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description Section -->
+          <div class="modal-section">
+            <h3>Sobre o Local</h3>
+            <p id="modalDescription">Descrição detalhada do local...</p>
+          </div>
+
+          <!-- Tip Box -->
+          <div class="tip-box">
+            <div class="tip-header">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3.5z"/>
+              </svg>
+              <strong>Dica Imperdível de Visita</strong>
+            </div>
+            <p id="modalTip">Melhor horário para fotos e curiosidades...</p>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a id="modalExternalMapBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Abrir no Google Maps ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- This city's data, then the shared application logic -->
+  <script src="./data.js"></script>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
