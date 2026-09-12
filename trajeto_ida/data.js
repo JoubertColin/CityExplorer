@@ -1,15 +1,21 @@
 /* ==========================================================================
-   Brusque - Tourist Spot Data
+   Trajeto - Tourist Spot Data
    Consumed by ../assets/app.js
    ========================================================================== */
 
-window.CITY_NAME = 'Parobé';
+/* CITY_NAME segue sendo o fallback para links do Google (caso um ponto
+   não informe sua própria cidade). Como esse trajeto passa por várias
+   cidades, cada ponto abaixo tem seu próprio campo "city" — é aí que se
+   deve inserir o nome da cidade de cada novo local adicionado. */
+
+window.CITY_NAME = '';
 
 window.CITY_DATA = [
   {
     id: 'panificio_real',
     name: 'Panifício Real',
     category: 'Gastronomia',
+    city: 'Tubarão',
     address: 'Av. Patrício Lima, 1616 - Tubarão SC',
     hours: 'Segunda a sábado: 06:30h às 21:00h | Domingo: 14:00h às 21:00h',
     price: '$$',
@@ -25,6 +31,7 @@ window.CITY_DATA = [
     id: 'casa_da_colonia',
     name: 'Casa DaColônia',
     category: 'Gastronomia',
+    city: 'Santo Antônio da Patrulha',
     address: 'RS-030, esquina com RS 474 - Sto. A. Patrulha RS',
     hours: 'Segunda a quinta: 07:00h às 19:30h | Sexta: 07:00h às 20:30h | Sábado: 07:00h às 20:00h | Domingo: 07:00h às 20:30h',
     price: '$$ - $$$',
@@ -40,6 +47,7 @@ window.CITY_DATA = [
     id: 'loja_vulcabras_parobe',
     name: 'Loja Vulcabras',
     category: 'Compras',
+    city: 'Parobe',
     address: 'R. Dr. Legendre, 34 - Sala 3 - Parobé RS',
     hours: 'Segunda a sexta: 09h00 às 18h00 | Sábado: 09h00 às 15h30',
     price: '$$',
@@ -55,6 +63,7 @@ window.CITY_DATA = [
     id: 'loja_bottero_parobe',
     name: 'Loja Bottero',
     category: 'Compras',
+    city: 'Parobé',
     address: 'Av. Artuino Arsand, 428 - Parobé RS',
     hours: 'Segunda a quinta: 09h00 às 12h30 e 13h30 às 18h30 | Sexta: 09h00 às 18h30 | Sábado: 08h00 às 12h00',
     price: '$$',
@@ -70,6 +79,7 @@ window.CITY_DATA = [
     id: 'katarze_picada_cafe',
     name: 'Katarze - Outlet de Calçados',
     category: 'Compras',
+    city: 'Picada Café',
     address: 'BR-116, 4151 - Picada Café RS',
     hours: 'Segunda a sexta: 09h00 às 11h30 e 12h30 às 18h00 | Sábado e domingo: 09h00 às 18h00',
     price: '$$',
@@ -83,8 +93,9 @@ window.CITY_DATA = [
   },
   {
     id: 'schmitt_tricot',
-    name: 'Schmitt Tricot - Picada Café',
+    name: 'Schmitt Tricot',
     category: 'Compras',
+    city: 'Picada Café',
     address: 'Rod. Presidente Getúlio Vargas, 2297 - Picada Café RS',
     hours: 'Segunda a sexta: 08h00 às 18h00 | Sábado e domingo: 08h30 às 19h00',
     price: '$$',
@@ -100,6 +111,7 @@ window.CITY_DATA = [
     id: 'cidade_zaandam',
     name: 'Cidade Zaandam',
     category: 'Cultura',
+    city: 'Nova Petrópolis',
     address: 'Av. 15 de Novembro, 1057 - Nova Petrópolis RS',
     hours: 'Segunda a sexta: 11h00 às 22h00 | Sábado e feriados: 09h00 às 00h00 | Domingo: 09h00 às 22h00',
     price: '$$ - $$$',
@@ -115,6 +127,7 @@ window.CITY_DATA = [
     id: 'praca_das_flores',
     name: 'Praça das Flores',
     category: 'Natureza',
+    city: 'Nova Petrópolis',
     address: 'Rua Rui Barbosa - Nova Petrópolis RS',
     hours: 'Aberto 24 horas',
     price: 'Gratuito',
@@ -130,6 +143,7 @@ window.CITY_DATA = [
     id: 'dakota_flagship_store',
     name: 'Dakota Flagship Store',
     category: 'Compras',
+    city: 'Nova Petrópolis',
     address: 'Av. 15 de Novembro, 3667 - Nova Petrópolis RS',
     hours: 'Diariamente: 09h00 às 19h00',
     price: '$$',
@@ -145,6 +159,7 @@ window.CITY_DATA = [
     id: 'mukli_alfajores',
     name: 'Mukli Alfajores',
     category: 'Gastronomia',
+    city: 'Nova Petrópolis',
     address: 'RS-235, km 14, nº 3003 - Nova Petrópolis RS',
     hours: 'Diariamente: 09h00 às 18h30',
     price: '$$',
@@ -160,6 +175,7 @@ window.CITY_DATA = [
     id: 'cervejaria_edelbrau',
     name: 'Cervejaria Edelbrau',
     category: 'Gastronomia',
+    city: 'Nova Petrópolis',
     address: 'Av. 15 de Novembro, 4024 - Nova Petrópolis RS',
     hours: 'Diariamente: 09h00 às 17h00',
     price: '$$',
@@ -167,7 +183,7 @@ window.CITY_DATA = [
     popularRank: 10,
     route: 10,
     image: 'imagens/cervejaria-edelbrau.png',
-    summary: 'Cervejaria artesanal com loja em Nova Petropólis RS, gastronomia e experiência interativa dedicada à cultura da cerveja.',
+    summary: 'Cervejaria artesanal com loja em Nova Petrópolis RS, gastronomia e experiência interativa dedicada à cultura da cerveja.',
     description: 'A Cervejaria Edelbrau oferece uma experiência interativa sobre a produção e a cultura da cerveja artesanal, com espaços temáticos, degustações e vista para a fábrica. O local também conta com loja e opções gastronômicas.',
     tip: 'Reserve um tempo para fazer a Experiência Edelbrau e aproveitar as degustações de diferentes estilos de cerveja.'
   }

@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
      (there's no curated official-site field in the dataset, so a search
      query is the safest option that always resolves to something useful). */
   function getExternalInfoUrl(spot) {
-    const query = encodeURIComponent(`${spot.name} ${CITY_NAME}`);
+    const query = encodeURIComponent(`${spot.name} ${spot.city || CITY_NAME}`);
     return `https://www.google.com/search?q=${query}`;
   }
 
@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalTip.textContent = spot.tip;
 
     // Google Maps link
-    const query = encodeURIComponent(`${spot.name} ${CITY_NAME}`);
+    const query = encodeURIComponent(`${spot.name} ${spot.city || CITY_NAME}`);
     modalExternalMapBtn.href = `https://www.google.com/maps/search/?api=1&query=${query}`;
 
     detailModal.classList.remove('hidden');
