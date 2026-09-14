@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let html = `
       <button class="pill active" data-category="all">
         <span class="pill-dot all-dot"></span>
-        <span>Todos</span>
+        <span>Todas</span>
         <span class="pill-count">${SPOTS.length}</span>
       </button>
     `;
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currentCategory = pill.dataset.category;
     if (categoryMenuLabel) {
       categoryMenuLabel.textContent = pill.dataset.category === 'all'
-        ? 'Todos'
+        ? 'Todas'
         : pill.dataset.category;
     }
     renderSpots();
@@ -211,6 +211,9 @@ document.addEventListener('DOMContentLoaded', () => {
      Hamburger Category Menu (open/close behavior)
      ------------------------------------------------------------------------ */
   function openCategoryMenu() {
+    // Evita que os dois menus (Cidades e Categorias) fiquem abertos e se
+    // sobreponham ao mesmo tempo.
+    closeCitiesMenu();
     categoryMenu.classList.add('open');
     categoryMenuBtn.setAttribute('aria-expanded', 'true');
   }
@@ -251,6 +254,9 @@ document.addEventListener('DOMContentLoaded', () => {
      Hamburger "Cidades" Menu (open/close behavior — mobile only, see CSS)
      ------------------------------------------------------------------------ */
   function openCitiesMenu() {
+    // Evita que os dois menus (Cidades e Categorias) fiquem abertos e se
+    // sobreponham ao mesmo tempo.
+    closeCategoryMenu();
     citiesMenu.classList.add('open');
     citiesMenuBtn.setAttribute('aria-expanded', 'true');
   }
@@ -356,10 +362,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ------------------------------------------------------------------------
      7. Theme Switcher (Dark / Light Glassmorphism Mode)
+     Mantém o tema escolhido em todo o site: ao trocar, salva a preferência
+     no localStorage para que outras páginas (outras cidades) já abram no
+     mesmo tema (ver o script inline no <head> de cada página, que aplica
+     essa preferência antes da primeira renderização).
      ------------------------------------------------------------------------ */
   themeToggleBtn.addEventListener('click', () => {
     currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', currentTheme);
+    try {
+      localStorage.setItem('theme', currentTheme);
+    } catch (err) {
+      /* localStorage indisponível (modo privado, etc.) — tema ainda
+         funciona nesta página, só não persiste entre páginas. */
+    }
   });
 
   /* ------------------------------------------------------------------------

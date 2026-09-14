@@ -38,7 +38,7 @@ window.CITY_DATA = [
     rating: '—',
     popularRank: 2,
     route: 1,
-    image: 'imagens/mirante_rota_sol.jpg',
+    image: 'imagens/mirante-rota-sol.jpg',
     summary: 'Mirante às margens da Rota do Sol com vista panorâmica para as paisagens montanhosas da Serra Gaúcha.',
     description: 'O Mirante da Rota do Sol é um ponto de parada para contemplação localizado na região de São Francisco de Paula, junto ao trajeto da Rota do Sol. O local proporciona uma vista das montanhas, vales e áreas de vegetação características da Serra Gaúcha, sendo uma parada interessante para quem percorre a rodovia em direção ao litoral ou à serra.',
     tip: 'Aproveite a parada para fotografar a paisagem e observar a mudança do cenário entre os vales e as áreas de serra. Tenha atenção ao trânsito ao acessar e deixar o ponto de parada.'
@@ -54,7 +54,7 @@ window.CITY_DATA = [
     rating: '4.2 ★ (300+ avaliações)',
     popularRank: 3,
     route: 1,
-    image: 'imagens/cafe_tainhas.jpg',
+    image: 'imagens/cafe_tainhas.png',
     summary: 'Tradicional parada gastronômica na região de Tainhas, conhecida pelos famosos pastéis, cafés, lanches e produtos coloniais.',
     description: 'O Café Tainhas é uma tradicional parada para viajantes na região de São Francisco de Paula, localizado junto à RS-020, no distrito de Tainhas. O estabelecimento oferece café da manhã, lanches, bebidas quentes, sucos, produtos coloniais e almoço. Entre as especialidades estão os famosos pastéis, enquanto o espaço conta ainda com estacionamento, deck com vista panorâmica, Wi-Fi, banheiros, fraldário e espaço para animais de estimação.',
     tip: 'É uma ótima parada para quem está percorrendo a Rota do Sol. Experimente os famosos pastéis e aproveite o deck panorâmico para descansar durante a viagem.'
@@ -76,21 +76,21 @@ window.CITY_DATA = [
     tip: 'Visite no início da manhã ou no final da tarde para aproveitar uma iluminação mais bonita para fotografias. O pôr do sol é especialmente interessante quando as condições climáticas estão favoráveis.'
   },
   {
-    id: 'panificio_real',
-    name: 'Panifício Real',
+    id: 'engenho_lanches',
+    name: 'Engenho Lanches',
     category: 'Gastronomia',
-    city: 'Tubarão',
-    address: 'Av. Patrício Lima, 1616 - Tubarão SC',
-    hours: 'Segunda a sábado: 06:30h às 21:00h | Domingo: 14:00h às 21:00h',
+    city: 'Paulo Lopes',
+    address: 'Rodovia BR-101, Km 266, s/n - Penha, Paulo Lopes - SC, 88490-000',
+    hours: 'Diariamente: 06:00h às 22:00h',
     price: '$$',
-    rating: '4.6 ★ (1k+ avaliações)',
+    rating: '4.6 ★ (32k+ avaliações)',
     popularRank: 1,
     route: 1,
-    image: 'imagens/padaria.jpg',
-    summary: 'Tradicional padaria e confeitaria de Tubarão SC, conhecida pela variedade de pães, doces, salgados e opções para café.',
-    description: 'O Panifício Real é uma tradicional padaria e confeitaria de Tubarão, localizada na Avenida Patrício Lima. O estabelecimento oferece uma grande variedade de pães, doces, salgados, cafés e produtos de confeitaria, sendo uma opção bastante procurada tanto pelos moradores quanto por visitantes que passam pela cidade.',
-    tip: 'Uma boa opção para uma parada durante a viagem, especialmente no início da manhã, quando há grande variedade de pães e produtos frescos.'
-  }
+    image: 'imagens/engenho_lanches.jpg',
+    summary: 'Tradicional parada às margens da BR-101, conhecida pela gastronomia, produtos coloniais, lanches e amplo espaço de lazer em meio à natureza.',
+    description: 'O Engenho Lanches é uma tradicional parada de viagem em Paulo Lopes, localizada às margens da BR-101. O complexo oferece uma variedade de lanches, salgados, doces, bolos, cafés e outros produtos, além de restaurante, empório, lojas e produtos coloniais. O espaço também se destaca pelo ambiente rústico e acolhedor, com lago, ponte sobre o rio, passarela e uma pequena fazendinha com animais, proporcionando uma experiência agradável para viajantes e famílias.',
+    tip: 'Uma ótima opção para fazer uma pausa durante a viagem pela BR-101. Reserve um pouco de tempo para conhecer as áreas externas, o lago, a fazendinha e as lojas, além de aproveitar para experimentar os produtos coloniais.'
+}
 
 
 

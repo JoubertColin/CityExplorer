@@ -15,9 +15,27 @@ body {
   min-height: 100vh;
 }
 
-/* Reuse the same header bar as the city pages, just without the search box */
+/* Reuse the same header bar as the city pages, just without the search box
+   ou o menu de cidades. Grid de 2 colunas: a marca (.brand) é centralizada
+   dentro de todo o espaço disponível (exceto o que o botão de tema
+   realmente precisa), em vez de reservar uma coluna vazia simétrica à
+   esquerda — isso evita que o texto passe por baixo do botão em telas
+   estreitas. */
 .app-header.home-header {
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.app-header.home-header .brand {
+  grid-column: 1;
+  justify-self: center;
+  min-width: 0;
+}
+
+.app-header.home-header .header-actions {
+  grid-column: 2;
+  justify-self: end;
 }
 
 /* --------------------------------------------------------------------------
@@ -44,6 +62,13 @@ body {
 
 .hero p {
   color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.hero p span{
+  color: var(--accent-green);
+  font-weight: bold;
   font-size: 1.05rem;
   line-height: 1.6;
 }
@@ -145,6 +170,7 @@ body {
 .city-card:hover .city-card-cta svg {
   transform: translateX(3px);
 }
+
 
 /* --------------------------------------------------------------------------
    Responsiveness

@@ -1,7 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR" data-theme="light">
 <head>
   <meta charset="UTF-8">
+  <script>
+    // Aplica o tema salvo (claro/escuro) antes da primeira renderização,
+    // para manter a escolha do usuário em todas as páginas do site e
+    // evitar um "flash" com o tema errado ao navegar entre cidades.
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+      } catch (err) {
+        /* localStorage indisponível (modo privado, etc.) — segue com o
+           tema padrão definido no próprio HTML. */
+      }
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>City Explorer | Guias Interativos de Turismo</title>
   <meta name="description" content="Escolha um destino e explore seus principais pontos turísticos com guias interativos completos.">
@@ -18,6 +34,7 @@
 <body>
   <div id="app" class="app-container">
     <!-- Header -->
+
     <header class="app-header home-header">
       <div class="brand">
         <div class="brand-icon">
@@ -25,11 +42,13 @@
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
           </svg>
         </div>
-        <div class="brand-text-2">
+        <div class="brand-text">
           <h1>City<span>Explorer</span></h1>
-          <span class="tagline">Guias interativos de turismo</span>
         </div>
       </div>
+
+
+      
 
       <div class="header-actions">
         <button id="themeToggleBtn" class="btn btn-icon theme-toggle" title="Alternar Modo Escuro/Claro">
@@ -49,12 +68,14 @@
           </svg>
         </button>
       </div>
+
+
     </header>
 
     <!-- Hero -->
     <section class="hero">
-      <h2>Para onde vamos <span>explorar</span> hoje?</h2>
-      <p>Escolha um destino abaixo e descubra os principais pontos turísticos, com horários, endereços e dicas de visita em um guia interativo completo.</p>
+      <h2>Prontos para <span>explorar</span> o Nosso Roteiro?</h2>
+      <p>Entre em cada um dos destinos abaixo para ver os locais que visitaremos em nossa viagem: <span>14 à 18.12.26</span></p>
     </section>
 
     <!-- City Cards -->
@@ -120,7 +141,78 @@
             <span class="city-card-badge">8 pontos turísticos</span>
           </div>
           <div class="city-card-content">
-            <h3 class="city-card-title">Trajeto: Florianópolis - Gramado</h3>
+            <h3 class="city-card-title">Rota: Florianópolis - Gramado</h3>
+            <p class="city-card-tagline">A Dubai Brasileira: praias, arranha-céus, atrações turísticas e uma vibrante vida urbana à beira-mar.</p>
+            <span class="city-card-cta">
+              Explorar
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+        </a>
+        <a href="balneario_camboriu/index.html" class="city-card">
+          <div class="city-card-media">
+            <img src="imagens/gramado.jpeg" alt="Gramado" loading="lazy" onerror="this.src='assets/imagens/gramado.jpeg'">
+            <span class="city-card-badge">8 pontos turísticos</span>
+          </div>
+          <div class="city-card-content">
+            <h3 class="city-card-title">Gramado</h3>
+            <p class="city-card-tagline">A Dubai Brasileira: praias, arranha-céus, atrações turísticas e uma vibrante vida urbana à beira-mar.</p>
+            <span class="city-card-cta">
+              Explorar
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+        </a>
+        <a href="canela/index.html" class="city-card">
+          <div class="city-card-media">
+            <img src="imagens/canela.jpg" alt="Canela" loading="lazy" onerror="this.src='assets/imagens/canela.jpg'">
+            <span class="city-card-badge">8 pontos turísticos</span>
+          </div>
+          <div class="city-card-content">
+            <h3 class="city-card-title">Canela</h3>
+            <p class="city-card-tagline">A Dubai Brasileira: praias, arranha-céus, atrações turísticas e uma vibrante vida urbana à beira-mar.</p>
+            <span class="city-card-cta">
+              Explorar
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+
+        <a href="trajeto_volta/index.html" class="city-card">
+          <div class="city-card-media">
+            <img src="imagens/volta.jpg" alt="Trajeto: Gramado - Florianópolis" loading="lazy" onerror="this.src='assets/imagens/volta.png'">
+            <span class="city-card-badge">8 pontos turísticos</span>
+          </div>
+          <div class="city-card-content">
+            <h3 class="city-card-title">Rota: Gramado - Florianópolis</h3>
+            <p class="city-card-tagline">A Dubai Brasileira: praias, arranha-céus, atrações turísticas e uma vibrante vida urbana à beira-mar.</p>
+            <span class="city-card-cta">
+              Explorar
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="florianopolis/index.html" class="city-card">
+          <div class="city-card-media">
+            <img src="imagens/florianopolis.jpeg" alt="florianopolis" loading="lazy" onerror="this.src='assets/imagens/florianopolis.jpg'">
+            <span class="city-card-badge">8 pontos turísticos</span>
+          </div>
+          <div class="city-card-content">
+            <h3 class="city-card-title">Florianópolis</h3>
             <p class="city-card-tagline">A Dubai Brasileira: praias, arranha-céus, atrações turísticas e uma vibrante vida urbana à beira-mar.</p>
             <span class="city-card-cta">
               Explorar
@@ -139,10 +231,19 @@
 
   <script>
     // Minimal inline script: only the dark/light theme toggle is needed here.
+    // Mantém o tema escolhido em todo o site: salva no localStorage para que
+    // as páginas das cidades abram no mesmo tema (ver script inline no
+    // <head>, que aplica essa preferência antes da primeira renderização).
     document.getElementById('themeToggleBtn').addEventListener('click', () => {
       const root = document.documentElement;
       const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
+      try {
+        localStorage.setItem('theme', next);
+      } catch (err) {
+        /* localStorage indisponível (modo privado, etc.) — tema ainda
+           funciona nesta página, só não persiste entre páginas. */
+      }
     });
   </script>
 </body>

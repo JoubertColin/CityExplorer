@@ -1,7 +1,23 @@
 <!doctype html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR" data-theme="light">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Aplica o tema salvo (claro/escuro) antes da primeira renderização,
+      // para manter a escolha do usuário em todas as páginas do site e
+      // evitar um "flash" com o tema errado ao navegar entre cidades.
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem('theme');
+          if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+          }
+        } catch (err) {
+          /* localStorage indisponível (modo privado, etc.) — segue com o
+             tema padrão definido no próprio HTML. */
+        }
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viagem Ida Explorer | Guia Interativo de Pontos Turísticos</title>
     <meta
@@ -43,8 +59,76 @@
             <span>Cidades</span>
           </a>
 
-          <!-- Menu hambúrguer "Cidades" (visível só em telas menores) -->
-          <div class="cities-menu" id="citiesMenu">
+        </div>
+
+        <div class="brand">
+          <div class="brand-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <h1>Ida: Gramado <span>Explorer</span></h1>
+            <span class="tagline">Guia Interativo da Rota</span>
+          </div>
+        </div>
+
+        <div class="header-end">
+        <!-- Header Controls -->
+        <div class="header-actions">
+          <!-- Theme Toggle Switch -->
+          <button
+            id="themeToggleBtn"
+            class="btn btn-icon theme-toggle"
+            title="Alternar Modo Escuro/Claro"
+          >
+            <svg
+              class="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+        </div>
+      </header>
+
+      <!-- Filters Bar -->
+      <nav class="filter-bar">
+        <!-- Menu hambúrguer "Cidades" (movido para a linha de filtros em telas menores) -->
+        <div class="cities-menu" id="citiesMenu">
             <button
               id="citiesMenuBtn"
               class="cities-menu-btn"
@@ -66,7 +150,11 @@
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="18" x2="21" y2="18"></line>
               </svg>
-              <span>Cidades</span>
+              <span>Cidades:</span>
+              <span id="citiesMenuLabel" class="cities-menu-current">Cidades/ Rotas</span>
+          <svg class="cities-menu-caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
             </button>
 
             <div class="cities-dropdown" id="citiesDropdown" role="menu">
@@ -142,100 +230,6 @@
               >
             </div>
           </div>
-        </div>
-
-        <div class="brand">
-          <div class="brand-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-              />
-            </svg>
-          </div>
-          <div class="brand-text">
-            <h1>Viagem Ida Gramado<span>Explorer</span></h1>
-            <span class="tagline">Guia Interativo de Pontos Turísticos</span>
-          </div>
-        </div>
-
-        <!-- Quick Search -->
-        <div class="search-box">
-          <svg
-            class="search-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Buscar por ponto turístico, bairro ou atração..."
-            aria-label="Buscar local"
-          />
-          <button
-            id="clearSearchBtn"
-            class="clear-search hidden"
-            title="Limpar busca"
-          >
-            &times;
-          </button>
-        </div>
-
-        <!-- Header Controls -->
-        <div class="header-actions">
-          <!-- Theme Toggle Switch -->
-          <button
-            id="themeToggleBtn"
-            class="btn btn-icon theme-toggle"
-            title="Alternar Modo Escuro/Claro"
-          >
-            <svg
-              class="sun-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg
-              class="moon-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-          </button>
-        </div>
-      </header>
-
-      <!-- Filters Bar -->
-      <nav class="filter-bar">
         <div class="category-menu" id="categoryMenu">
           <button
             id="categoryMenuBtn"
@@ -260,7 +254,7 @@
             </svg>
             <span>Categorias:</span>
             <span id="categoryMenuLabel" class="category-menu-current"
-              >Todos</span
+              >Categorias</span
             >
             <svg
               class="category-menu-caret"
@@ -288,6 +282,34 @@
             <option value="name">Nome (A-Z)</option>
             <option value="category">Categoria</option>
           </select>
+        </div>
+
+        <!-- Buscar (trazido para a linha dos filtros em telas maiores) -->
+        <div class="search-box">
+          <svg
+            class="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Buscar por ponto turístico, bairro ou atração..."
+            aria-label="Buscar local"
+          />
+          <button
+            id="clearSearchBtn"
+            class="clear-search hidden"
+            title="Limpar busca"
+          >
+            &times;
+          </button>
         </div>
       </nav>
 
