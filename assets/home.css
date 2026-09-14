@@ -50,7 +50,7 @@ body {
 
 .hero h2 {
   font-family: var(--font-heading);
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   font-weight: 800;
   letter-spacing: -0.5px;
   margin-bottom: 14px;
@@ -184,7 +184,7 @@ body {
     padding: 40px 20px 28px;
   }
   .hero h2 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
   .cities-section {
     padding: 0 16px 40px;

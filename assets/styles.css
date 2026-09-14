@@ -273,6 +273,22 @@ body {
 }
 
 
+.brand-text-2 h1 {
+  height: 25px;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.brand-text-2 h1 span {
+  color: var(--accent-green);
+}
+
+
 /* Search Box */
 .search-box {
   flex: 1;
@@ -1025,7 +1041,7 @@ a.cities-dropdown-item:hover {
 .modal-hero img {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 .modal-hero-overlay {
   position: absolute;
@@ -1034,7 +1050,7 @@ a.cities-dropdown-item:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 20px 24px;
+  padding: 20px 40px;
 }
 
 .badge-category {
@@ -1225,6 +1241,12 @@ body {
 
   }
 
+  .brand-text-2 h1 {
+  height: 20px;
+  font-size: 1.5rem;
+  margin: 2px 0px 8px;
+}
+
   .header-actions {
     gap: 6px;
   }
@@ -1331,6 +1353,8 @@ body {
     height: 200px;
   }
 
+
+
   .modal-hero-overlay h2 {
     font-size: 1.3rem;
   }
@@ -1392,10 +1416,6 @@ body {
 
   .card-title {
     font-size: 1rem;
-  }
-
-  .card-summary {
-    -webkit-line-clamp: 2;
   }
 
   .card-footer {
