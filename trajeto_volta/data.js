@@ -14,7 +14,7 @@ window.CITY_DATA = [
   {
     id: 'matria_parque_flores',
     name: 'Mátria Parque de Flores',
-    category: 'Natureza',
+    category: 'Entretenimento',
     city: 'São Francisco de Paula',
     address: 'Rodovia ERS-235, Km 68 - S. Francisco de Paula RS',
     hours: 'Diariamente: 10h às 18h',
@@ -30,7 +30,7 @@ window.CITY_DATA = [
   {
     id: 'mirante_rota_do_sol',
     name: 'Mirante da Rota do Sol',
-    category: 'Mirante',
+    category: 'Paisagem',
     city: 'Itati',
     address: 'RS-486, Km4 - Itati RS',
     hours: 'Acesso livre',
@@ -62,7 +62,7 @@ window.CITY_DATA = [
   {
     id: 'mirante_morro_do_farol',
     name: 'Mirante Morro do Farol',
-    category: 'Mirante',
+    category: 'Paisagem',
     city: 'Torres',
     address: 'Rua Alferes Porto - Torres RS',
     hours: 'Acesso livre',
@@ -90,9 +90,5 @@ window.CITY_DATA = [
     summary: 'Tradicional parada às margens da BR-101, produtos coloniais, lanches e amplo espaço de lazer em meio à natureza.',
     description: 'O Engenho Lanches é uma tradicional parada de viagem em Paulo Lopes, localizada às margens da BR-101. O complexo oferece uma variedade de lanches, salgados, doces, bolos, cafés e outros produtos, além de restaurante, empório, lojas e produtos coloniais. O espaço também se destaca pelo ambiente rústico e acolhedor, com lago, ponte sobre o rio, passarela e uma pequena fazendinha com animais, proporcionando uma experiência agradável para viajantes e famílias.',
     tip: 'Uma ótima opção para fazer uma pausa durante a viagem pela BR-101. Reserve um pouco de tempo para conhecer as áreas externas, o lago, a fazendinha e as lojas, além de aproveitar para experimentar os produtos coloniais.'
-}
-
-
-
-
+  }
 ];

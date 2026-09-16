@@ -121,9 +121,9 @@ body {
 
 .city-card-badge {
   position: absolute;
-  top: 14px;
-  right: 14px;
-  background: rgba(15, 23, 42, 0.75);
+  top: 8px;
+  left: 8px;
+  background: rgba(39, 70, 59, 0.4);
   backdrop-filter: var(--glass-blur);
   color: #ffffff;
   font-size: 0.75rem;

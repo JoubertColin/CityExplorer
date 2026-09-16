@@ -110,7 +110,7 @@ window.CITY_DATA = [
   {
     id: 'cidade_zaandam',
     name: 'Cidade Zaandam',
-    category: 'Cultura',
+    category: 'Gastronomia',
     city: 'Nova Petrópolis',
     address: 'Av. 15 de Novembro, 1057, Centro - Nova Petrópolis RS',
     hours: 'Domingo a quinta: 11h às 22h | Sexta e Sábado: 11h às 23h',
@@ -126,7 +126,7 @@ window.CITY_DATA = [
   {
     id: 'praca_das_flores',
     name: 'Praça das Flores',
-    category: 'Natureza',
+    category: 'Paisagem',
     city: 'Nova Petrópolis',
     address: 'Avenida 15 de Novembro, 1302-1304 - Centro - Nova Petrópolis',
     hours: 'Aberto 24 horas',
@@ -186,5 +186,21 @@ window.CITY_DATA = [
     summary: 'Cervejaria artesanal com loja em Nova Petrópolis RS, gastronomia e experiência interativa dedicada à cultura da cerveja.',
     description: 'A Cervejaria Edelbrau oferece uma experiência interativa sobre a produção e a cultura da cerveja artesanal, com espaços temáticos, degustações e vista para a fábrica. O local também conta com loja e opções gastronômicas.',
     tip: 'Reserve um tempo para fazer a Experiência Edelbrau e aproveitar as degustações de diferentes estilos de cerveja.'
-  }
+  },
+  {
+    id: 'portico_gramado',
+    name: 'Pórtico de Gramado',
+    category: 'Atração',
+    city: 'Gramado',
+    address: 'ERS-235 e RS-115 - entradas de Gramado',
+    hours: 'Diariamente: acesso livre',
+    price: 'Gratuito',
+    rating: '4.8 ★ (20k avaliações)',
+    popularRank: 20,
+    route: 20,
+    image: 'imagens/portico_gramado.jpg',
+    summary: 'Portal de entrada de Gramado, decorado em estilo arquitetônico que remete à colonização europeia da região.',
+    description: 'Gramado possui dois pórticos turísticos principais. O pórtico da entrada pela Nova Petrópolis apresenta inspiração bávara, enquanto o acesso pela Via Taquara possui características normandas. Ambos são tradicionais pontos para fotografias de chegada à cidade.',
+    tip: 'Pare para fotografar o pórtico correspondente à estrada utilizada na chegada ou saída de Gramado.'
+  },
 ];

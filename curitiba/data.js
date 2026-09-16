@@ -24,7 +24,7 @@ window.CITY_DATA = [
   {
     id: 'museu_niemeyer',
     name: 'Museu Oscar Niemeyer (MON)',
-    category: 'Cultura',
+    category: 'Entretenimento',
     address: 'R. Marechal Hermes, 999 - Centro Cívico',
     hours: 'Terça a Domingo: 10h às 18h',
     price: 'R$ 36,00 (Meia: R$ 18,00)',
@@ -39,7 +39,7 @@ window.CITY_DATA = [
   {
     id: 'opera_de_arame',
     name: 'Ópera de Arame',
-    category: 'Cultura',
+    category: 'Entretenimento',
     address: 'R. João Gava, 920 - Abranches',
     hours: 'Terça a Domingo: 10h às 17:50h',
     price: 'R$ 30,00 (Meia: R$ 15,00)',
@@ -69,7 +69,7 @@ window.CITY_DATA = [
   {
     id: 'torre_panoramica',
     name: 'Torre Panorâmica',
-    category: 'Mirante',
+    category: 'Entretenimento',
     address: 'R. Prof. Lycio Grein Castro Vellozo, 191 - Mercês',
     hours: 'Diariamente: 10h às 18h',
     price: 'R$ 10,00',
@@ -142,23 +142,18 @@ window.CITY_DATA = [
     tip: 'Experimente o tradicional bolo Martha Rocha e aproveite para provar também um dos salgados da casa. Para uma experiência mais tranquila, prefira os períodos fora dos horários de maior movimento.'
   },
   {
-  id: 'natal_curitiba_2026',
-  name: 'Natal de Curitiba 2026',
-  category: 'Natal',
-  address: 'Praça Santos Andrade - Centro',
-  hours: 'Programação: 24 de novembro a 30 de dezembro de 2026 | Decoração: até 06 de janeiro de 2027',
-  price: 'Gratuito — algumas atrações especiais podem ser pagas',
-  rating: '4.9 ★',
-  popularRank: 10,
-  route: 10,
-  image: 'imagens/natal.jpg',
-  summary: 'Uma das maiores programações natalinas do Brasil, com mais de 150 atrações espalhadas por Curitiba, transformando praças, parques, ruas e cartões-postais da cidade em cenários iluminados.',
-  description: 'O Natal de Curitiba 2026 transforma a capital paranaense em um grande circuito de experiências natalinas. A programação começa em 24 de novembro, com a abertura na Praça Santos Andrade, e segue com espetáculos, apresentações musicais, corais, projeções mapeadas, árvores iluminadas, feiras especiais, atrações para crianças e experiências espalhadas por diferentes regiões da cidade. Entre os destaques estão o novo show de águas, luzes e música no Parque Tingui, a segunda edição do Disney Celebra – Um Natal Inesquecível no Parque Barigui, além de atrações tradicionais em locais como a Rua XV de Novembro, Jardim Botânico, Parque Tanguá, Passeio Público, Centro Histórico e outros cartões-postais de Curitiba. A programação artística segue até 30 de dezembro, enquanto a decoração natalina permanece instalada até 06 de janeiro de 2027.',
-  tip: 'Reserve mais de um dia para conhecer as atrações. Para aproveitar melhor as iluminações e projeções, programe os passeios para o final da tarde e início da noite. Consulte a programação oficial antes da visita, pois datas e horários variam de acordo com cada atração.'
-}
-
-
-
-
-
+    id: 'natal_curitiba_2026',
+    name: 'Natal de Curitiba 2026',
+    category: 'Natal',
+    address: 'Praça Santos Andrade - Centro',
+    hours: 'Programação: 24 de novembro a 30 de dezembro de 2026 | Decoração: até 06 de janeiro de 2027',
+    price: 'Gratuito — algumas atrações especiais podem ser pagas',
+    rating: '4.9 ★',
+    popularRank: 10,
+    route: 10,
+    image: 'imagens/natal.jpg',
+    summary: 'Uma das maiores programações natalinas do Brasil, com mais de 150 atrações espalhadas por Curitiba, transformando praças, parques, ruas e cartões-postais da cidade em cenários iluminados.',
+    description: 'O Natal de Curitiba 2026 transforma a capital paranaense em um grande circuito de experiências natalinas. A programação começa em 24 de novembro, com a abertura na Praça Santos Andrade, e segue com espetáculos, apresentações musicais, corais, projeções mapeadas, árvores iluminadas, feiras especiais, atrações para crianças e experiências espalhadas por diferentes regiões da cidade. Entre os destaques estão o novo show de águas, luzes e música no Parque Tingui, a segunda edição do Disney Celebra – Um Natal Inesquecível no Parque Barigui, além de atrações tradicionais em locais como a Rua XV de Novembro, Jardim Botânico, Parque Tanguá, Passeio Público, Centro Histórico e outros cartões-postais de Curitiba. A programação artística segue até 30 de dezembro, enquanto a decoração natalina permanece instalada até 06 de janeiro de 2027.',
+    tip: 'Reserve mais de um dia para conhecer as atrações. Para aproveitar melhor as iluminações e projeções, programe os passeios para o final da tarde e início da noite. Consulte a programação oficial antes da visita, pois datas e horários variam de acordo com cada atração.'
+  }
 ];

@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
      a category (e.g. "Natureza"); the color/badge is derived from here. */
   const CATEGORY_META = {
     'Natureza':       { cls: 'nature',  dot: 'nature-dot' },
-    'Cultura':        { cls: 'culture', dot: 'culture-dot' },
-    'Mirante':        { cls: 'view',    dot: 'view-dot' },
+    'Atração':        { cls: 'landmark', dot: 'landmark-dot' },
+    'Paisagem':        { cls: 'view',    dot: 'view-dot' },
     'Gastronomia':    { cls: 'food',    dot: 'food-dot' },
     'Compras':        { cls: 'shop',    dot: 'shop-dot' },
     'Entretenimento': { cls: 'fun',     dot: 'fun-dot' },

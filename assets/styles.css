@@ -14,7 +14,7 @@
 
   /* Category Palette */
   --cat-nature: #10b981;
-  --cat-culture: #8b5cf6;
+  --cat-landmark: #8b5cf6;
   --cat-view: #f59e0b;
   --cat-food: #ef4444;
   --cat-shop: #06b6d4;
@@ -706,7 +706,7 @@ a.cities-dropdown-item:hover {
 }
 .all-dot { background: #94a3b8; }
 .nature-dot { background: var(--cat-nature); }
-.culture-dot { background: var(--cat-culture); }
+.landmark-dot { background: var(--cat-landmark); }
 .view-dot { background: var(--cat-view); }
 .food-dot { background: var(--cat-food); }
 .shop-dot { background: var(--cat-shop); }
@@ -853,11 +853,11 @@ a.cities-dropdown-item:hover {
 }
 
 .card-badge-category.nature { background: rgba(16, 185, 129, 0.9); }
-.card-badge-category.culture { background: rgba(139, 92, 246, 0.9); }
+.card-badge-category.landmark { background: rgba(139, 92, 246, 0.9); }
 .card-badge-category.view { background: rgba(245, 158, 11, 0.9); }
 .card-badge-category.food { background: rgba(239, 68, 68, 0.9); }
 .card-badge-category.shop { background: rgba(6, 182, 212, 0.9); }
-.card-badge-category.fun { background: rgba(236, 72, 153, 0.9); }
+.card-badge-category.fun { background:  rgba(236, 72, 153, 0.9);}
 .card-badge-category.holiday { background: transparent; }
 
 .card-content {
@@ -1352,8 +1352,6 @@ body {
   .modal-hero {
     height: 200px;
   }
-
-
 
   .modal-hero-overlay h2 {
     font-size: 1.3rem;

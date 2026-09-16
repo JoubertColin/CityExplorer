@@ -16,7 +16,7 @@ window.CITY_DATA = [
     rating: '4.5 ★ (23k avaliações)',
     popularRank: 1,
     route: 1,
-    image: 'imagens/fip.png',
+    image: 'imagens/fip.jpg',
     summary: 'Um dos principais centros de compras de Brusque, com mais de 200 lojas: moda, acessórios, calçados, e outros produtos.',
     description: 'A FIP - Feira da Moda é um dos principais destinos de compras de Brusque e reúne mais de 200 lojas em um amplo centro comercial. O espaço oferece uma grande variedade de produtos, incluindo moda feminina, masculina e infantil, acessórios, calçados, artigos para casa e outros segmentos. Muitas lojas trabalham diretamente com produtos de fábrica, tornando o local bastante procurado por quem busca variedade e oportunidades de compra. Além das lojas, a FIP conta com praça de alimentação e opções de entretenimento para crianças, tornando a visita uma alternativa de compras e lazer para toda a família.',
     tip: 'Reserve algumas horas para conhecer as lojas, pois o complexo é grande e reúne mais de 200 estabelecimentos. Se o objetivo for fazer compras, compare preços entre as lojas antes de decidir. Aos domingos, confirme previamente a programação e o horário de funcionamento.'
