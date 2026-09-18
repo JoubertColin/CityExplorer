@@ -7,22 +7,6 @@ window.CITY_NAME = 'Canela';
 
 window.CITY_DATA = [
   {
-    id: 'alpen_park',
-    name: 'Alpen Park',
-    category: 'Entretenimento',
-    city: 'Canela',
-    address: 'Rodovia Arnaldo Oppitz, 901 - São João, Canela - RS',
-    hours: 'Diariamente: 09:00h às 17:00h',
-    price: 'Consultar valores dos passaportes e atrações',
-    rating: '4.4 ★ (19.7k avaliações)',
-    popularRank: 5,
-    route: 5,
-    image: 'imagens/alpen_park.jpg',
-    summary: 'Parque de aventura e diversão com montanha-russa, brinquedos, atividades radicais e atrações para diferentes idades.',
-    description: 'O Alpen Park é um dos principais parques de diversão da Serra Gaúcha. Localizado em meio à natureza, oferece atrações como montanha-russa, trenó, tirolesa, arvorismo e outras experiências de aventura.',
-    tip: 'Reserve algumas horas para aproveitar o parque e confira antecipadamente quais atrações estão incluídas no ingresso escolhido.'
-  },
-  {
     id: 'ice_bar_mundo_gelado',
     name: 'Ice Bar Mundo Gelado',
     category: 'Entretenimento',
@@ -37,22 +21,6 @@ window.CITY_DATA = [
     summary: 'Bar de gelo onde os visitantes podem experimentar drinks em copos de gelo em um ambiente com temperatura que pode chegar a -23 °C.',
     description: 'O Ice Bar Mundo Gelado é uma das atrações mais diferentes de Canela e faz parte do complexo Mundo Gelado. O espaço reproduz uma caverna congelada com esculturas de gelo em formatos como sofás, mesas, camas e trenós. A experiência inclui dois drinks servidos em copos de gelo e agasalhos térmicos com capuz e luvas. O complexo também oferece a Casa do Capitão, espaço temático militar, além de loja, cafeteria, sorveteria e museu aberto à noite.',
     tip: 'Vista calça comprida e calçados fechados e aproveite para fotografar as esculturas de gelo. Reserve um tempo para conhecer também a Casa do Capitão e o museu do complexo.'
-  },
-  {
-    id: 'parque_do_caracol',
-    name: 'Parque do Caracol',
-    category: 'Entretenimento',
-    city: 'Canela',
-    address: 'Rodovia RS-466, km 0 - Caracol, Canela - RS',
-    hours: 'Seg a Sex: 09:00h às 17:00h | Sáb e Dom: 09:00h às 18:00h',
-    price: 'Consultar valor do ingresso',
-    rating: '4.6 ★ (29.5k avaliações)',
-    popularRank: 6,
-    route: 6,
-    image: 'imagens/parque_caracol.jpg',
-    summary: 'Parque natural famoso pela Cascata do Caracol, trilhas, mirantes e paisagens de Mata Atlântica.',
-    description: 'O Parque do Caracol é uma das principais atrações naturais de Canela. Seu grande destaque é a Cascata do Caracol, uma das quedas-d’água mais conhecidas do Rio Grande do Sul. O parque também oferece trilhas e áreas de contemplação da natureza.',
-    tip: 'Use calçados confortáveis e reserve tempo para caminhar pelas trilhas e visitar os diferentes mirantes.'
   },
   {
     id: 'praca_joao_correa',
@@ -97,7 +65,7 @@ window.CITY_DATA = [
     rating: '4.9 ★ (2.6k avaliações)',
     popularRank: 4,
     route: 4,
-    image: 'imagens/catedral_de_pedra.jpeg',
+    image: 'imagens/catedral_de_pedra.png',
     summary: 'Imponente igreja em estilo gótico inglês, considerada um dos maiores símbolos arquitetônicos de Canela.',
     description: 'A Catedral de Pedra, oficialmente Paróquia Nossa Senhora de Lourdes, é um dos principais cartões-postais de Canela. Construída em pedra e inspirada na arquitetura gótica, destaca-se pela torre, vitrais e iluminação noturna que valoriza sua fachada.',
     tip: 'Visite durante o dia para observar os detalhes arquitetônicos e retorne à noite para apreciar a iluminação da catedral.'
@@ -117,5 +85,22 @@ window.CITY_DATA = [
     summary: 'Tradicional evento natalino de Canela que transforma a cidade com iluminação, decoração, música, teatro e espetáculos.',
     description: 'O Sonho de Natal é um dos principais eventos turísticos de Canela. A edição de 2026 corresponde à 39ª edição do evento e promete atrações culturais, decoração especial, iluminação natalina, música, teatro e atividades para toda a família.',
     tip: 'A programação oficial de 2026 ainda deve ser consultada antes da viagem, pois horários e espetáculos podem ser divulgados posteriormente.'
+  },
+  {
+    id: 'tri_hotel_canela',
+    name: 'Tri Hotel Canela',
+    category: 'Hotel',
+    address: 'R. José Pedro Piva, 220 - Vila Suzana, Canela - RS',
+    hours: 'Check-in: a partir das 14h | Check-out: até 12h | Recepção: 24 horas',
+    price: 'Diárias: consulte os valores para a data da hospedagem',
+    rating: '4.2 ★ (1.258 avaliações)',
+    popularRank: 2,
+    route: 10,
+    image: 'imagens/tri_hotel_canela.jpg',
+    summary: 'Hotel tradicional de Canela, com piscina coberta, restaurante, academia, espaço kids e localização próxima às principais atrações da Serra Gaúcha.',
+    description: 'O Tri Hotel Canela está localizado no bairro Vila Suzana e oferece uma estrutura completa para quem visita Canela e Gramado. O hotel conta com recepção 24 horas, Wi-Fi gratuito, restaurante, bar, piscina coberta, academia, espaço kids, estacionamento, sala para eventos e serviço de quarto. O café da manhã é servido diariamente e o restaurante Tri Gastronomia funciona das 11h30 às 23h. A hospedagem fica a poucos quilômetros de atrações como a Catedral de Pedra e o Mundo a Vapor.',
+    tip: 'O hotel é uma boa base para explorar Canela e Gramado de carro. Se estiver viajando em família, vale verificar a disponibilidade da piscina coberta e do espaço kids.'
   }
+
+
 ];

@@ -142,6 +142,21 @@ window.CITY_DATA = [
     tip: 'Experimente o tradicional bolo Martha Rocha e aproveite para provar também um dos salgados da casa. Para uma experiência mais tranquila, prefira os períodos fora dos horários de maior movimento.'
   },
   {
+    id: 'hotel_moov_curitiba',
+    name: 'Hotel Moov Curitiba',
+    category: 'Hotel',
+    address: 'Av. Sete de Setembro, 5732 - Batel',
+    hours: 'Check-in: a partir das 14h | Check-out: até 12h | Recepção: 24 horas',
+    price: 'Diárias: consulte os valores para a data da hospedagem',
+    rating: '4.5 ★ (295 avaliações)',
+    popularRank: 1,
+    route: 13,
+    image: 'imagens/moov_curitiba.png',
+    summary: 'Hotel moderno localizado no bairro Batel, com localização estratégica para quem deseja conhecer Curitiba.',
+    description: 'O Hotel Moov Curitiba está localizado no bairro Batel, uma das regiões mais conhecidas e movimentadas da capital paranaense. O hotel possui 123 quartos e oferece Wi-Fi gratuito, recepção 24 horas, estacionamento privativo, acessibilidade para pessoas com mobilidade reduzida, isolamento acústico e pátio. A localização facilita o acesso a restaurantes, áreas verdes, pontos históricos e atrações culturais de Curitiba. O hotel também aceita animais de estimação mediante custo adicional e conta com práticas voltadas à sustentabilidade, incluindo certificação LEED.',
+    tip: 'Aproveite a localização no Batel para conhecer restaurantes, cafés e atrações da região. Para maior tranquilidade, confirme previamente a disponibilidade e o valor do estacionamento.'
+  },  
+  {
     id: 'natal_curitiba_2026',
     name: 'Natal de Curitiba 2026',
     category: 'Natal',
@@ -150,7 +165,7 @@ window.CITY_DATA = [
     price: 'Gratuito — algumas atrações especiais podem ser pagas',
     rating: '4.9 ★',
     popularRank: 10,
-    route: 10,
+    route: 12,
     image: 'imagens/natal.jpg',
     summary: 'Uma das maiores programações natalinas do Brasil, com mais de 150 atrações espalhadas por Curitiba, transformando praças, parques, ruas e cartões-postais da cidade em cenários iluminados.',
     description: 'O Natal de Curitiba 2026 transforma a capital paranaense em um grande circuito de experiências natalinas. A programação começa em 24 de novembro, com a abertura na Praça Santos Andrade, e segue com espetáculos, apresentações musicais, corais, projeções mapeadas, árvores iluminadas, feiras especiais, atrações para crianças e experiências espalhadas por diferentes regiões da cidade. Entre os destaques estão o novo show de águas, luzes e música no Parque Tingui, a segunda edição do Disney Celebra – Um Natal Inesquecível no Parque Barigui, além de atrações tradicionais em locais como a Rua XV de Novembro, Jardim Botânico, Parque Tanguá, Passeio Público, Centro Histórico e outros cartões-postais de Curitiba. A programação artística segue até 30 de dezembro, enquanto a decoração natalina permanece instalada até 06 de janeiro de 2027.',

@@ -82,21 +82,6 @@ window.CITY_DATA = [
     tip: 'Combine a visita com outros atrativos da região do Pontal Norte e da Avenida Atlântica para aproveitar melhor o passeio.'
   },
   {
-    id: 'cristo_luz',
-    name: 'Cristo Luz',
-    category: 'Entretenimento',
-    address: 'Rua Indonésia, 800 - Bairro das Nações',
-    hours: 'Segunda a sábado: 16h às 00h | Domingo: 10h às 00h',
-    price: 'A partir de R$ 80,00 (Meia: R$ 44,00)',
-    rating: '4.7 ★ (milhares de avaliações)',
-    popularRank: 4,
-    route: 9,
-    image: 'imagens/cristo.jpg',
-    summary: 'Monumento localizado em um dos pontos mais altos da cidade, com vista panorâmica de Balneário Camboriú.',
-    description: 'O Cristo Luz é um dos símbolos mais conhecidos de Balneário Camboriú. Localizado em um dos pontos mais altos da cidade, o complexo oferece mirantes com vista panorâmica para a cidade, a Praia Central e o litoral. À noite, o monumento recebe iluminação especial em diferentes cores, criando um espetáculo visual que pode ser observado de vários pontos de Balneário Camboriú.',
-    tip: 'Chegue próximo ao pôr do sol para apreciar a vista durante o dia e permaneça até o anoitecer para ver o espetáculo de iluminação do monumento.'
-  },
-  {
     id: 'deck_pontal_norte',
     name: 'Deck do Pontal Norte',
     category: 'Paisagem',
