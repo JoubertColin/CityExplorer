@@ -225,7 +225,7 @@ window.CITY_DATA = [
     rating: '4.7 ★ (31.3k avaliações)',
     popularRank: 15,
     route: 16,
-    image: 'imagens/praia_joaquina.jpeg',
+    image: 'imagens/praia_joaquina.jpg',
     summary: 'Uma das praias mais famosas de Florianópolis, conhecida pelas ondas, pelo surfe, pelas dunas e pelo nascer do sol.',
     description: 'A Praia da Joaquina possui cerca de 3 quilômetros de extensão e é reconhecida internacionalmente por suas condições favoráveis ao surfe. Além da praia, a região possui grandes dunas utilizadas para sandboard e áreas de interesse arqueológico nas proximidades.',
     tip: 'Chegue cedo para assistir ao nascer do sol e, se gostar de aventura, experimente o sandboard nas dunas.'
@@ -241,7 +241,7 @@ window.CITY_DATA = [
     rating: '4.7 ★ (9.2k avaliações)',
     popularRank: 16,
     route: 17,
-    image: 'imagens/praia_campeche.jpeg',
+    image: 'imagens/praia_campeche.jpg',
     summary: 'Extensa praia do sul da Ilha, procurada por surfistas, praticantes de kitesurfe e visitantes que desejam conhecer a Ilha do Campeche.',
     description: 'A Praia do Campeche possui aproximadamente 3,5 quilômetros de extensão e combina faixa de areia, mar aberto e paisagens naturais. É bastante procurada para esportes aquáticos e também funciona como um dos principais pontos de embarque para a Ilha do Campeche.',
     tip: 'Se quiser visitar a Ilha do Campeche, reserve o passeio com antecedência e confira as condições de navegação.'
