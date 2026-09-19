@@ -145,7 +145,7 @@ window.CITY_DATA = [
     rating: '4.5 ★ (12.5k avaliações)',
     popularRank: 9,
     route: 9,
-    image: 'imagens/praca_xv_floripa.jpg',
+    image: 'imagens/praca_xv_floripa.png',
     summary: 'Uma das praças mais tradicionais de Florianópolis, cercada por importantes edifícios históricos e pela famosa figueira centenária.',
     description: 'A Praça XV de Novembro é um dos principais espaços históricos de Florianópolis. Localizada no coração do centro, reúne árvores, jardins e monumentos e é marcada pela presença da tradicional figueira centenária. Ao seu redor estão atrações como a Catedral Metropolitana e o Palácio Cruz e Sousa.',
     tip: 'Caminhe ao redor da praça e observe a grande figueira, um dos símbolos mais tradicionais do centro de Florianópolis.'
@@ -193,7 +193,7 @@ window.CITY_DATA = [
     rating: '4.7 ★',
     popularRank: 9,
     route: 10,
-    image: 'imagens/jurere_internacional.jpg',
+    image: 'imagens/jurere_internacional.png',
     summary: 'Praia de águas calmas e infraestrutura sofisticada, conhecida pelos beach clubs, hotéis, restaurantes e pelo ambiente de alto padrão.',
     description: 'Jurerê Internacional é um dos destinos mais conhecidos do litoral de Florianópolis. A praia possui águas geralmente calmas e uma extensa faixa de areia, enquanto o bairro oferece hotéis, restaurantes, beach clubs e infraestrutura voltada ao turismo. A região é especialmente movimentada durante o verão.',
     tip: 'Durante a alta temporada, chegue cedo para encontrar estacionamento e aproveitar a praia com mais tranquilidade.'
@@ -289,7 +289,7 @@ window.CITY_DATA = [
     rating: '4.8 ★ (346 avaliações)',
     popularRank: 19,
     route: 21,
-    image: 'imagens/praia_itaguacu.jpeg',
+    image: 'imagens/praia_itaguacu.jpg',
     summary: 'Praia tranquila da região continental de Florianópolis, cercada por formações rochosas e com belas vistas para a Baía Sul.',
     description: 'A Praia de Itaguaçu está localizada no bairro de Coqueiros e é conhecida pela paisagem formada por pequenas ilhas e rochas que surgem nas águas da baía. A região possui restaurantes, bares e espaços para contemplação, sendo uma opção agradável para um passeio no continente.',
     tip: 'Combine Itaguaçu com a Praia de Bom Abrigo e o Parque de Coqueiros para fazer um roteiro pela região continental.'
@@ -337,7 +337,7 @@ window.CITY_DATA = [
       rating: '4.5 ★ (3.3k+ avaliações)',
       popularRank: 11,
       route: 11,
-      image: 'imagens/pitangueiras.jpg',
+      image: 'imagens/pitangueiras.png',
       summary: 'Restaurante à beira-mar em Sambaqui, conhecido pelos frutos do mar, ambiente acolhedor e belas vistas da Baía Norte.',
       description: 'Localizado na Ponta de Sambaqui, o Restaurante Pitangueiras oferece uma experiência gastronômica privilegiada junto ao mar. O cardápio valoriza peixes, ostras, camarões e outros frutos do mar, além de petiscos e bebidas. O restaurante possui ambiente interno envidraçado e deck de madeira à beira-mar, proporcionando uma vista especial da Baía Norte e um cenário especialmente agradável para apreciar o pôr do sol.',
       tip: 'Prefira os horários próximos ao pôr do sol para aproveitar a vista privilegiada do mar enquanto saboreia os pratos da casa.'
