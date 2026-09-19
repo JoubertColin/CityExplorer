@@ -8,17 +8,17 @@ window.CITY_NAME = 'Florianópolis';
 window.CITY_DATA = [
   {
     id: 'totem_floripa',
-    name: 'Totem Floripa',
+    name: 'Floripa Totem: #Floripa',
     category: 'Atração',
     city: 'Florianópolis',
-    address: 'Av. Jorn. Rubéns de Arruda Ramos, 5438 - Centro, Florianópolis - SC',
-    hours: 'Diariamente: acesso livre',
+    address: 'Av. Jorn. Rubéns de Arruda Ramos, 5438 - Beira-Mar Norte',
+    hours: 'Acesso 24h',
     price: 'Gratuito',
     rating: '4.7 ★ (935 avaliações)',
     popularRank: 1,
     route: 1,
-    image: 'imagens/totem_floripa.jpeg',
-    summary: 'Grande letreiro turístico que se tornou um dos cenários mais fotografados de Florianópolis.',
+    image: 'imagens/totem_floripa.jpg',
+    summary: 'Grande letreiro turístico na Beira-Mar Norte que se tornou um dos cenários mais fotografados de Florianópolis.',
     description: 'O Totem Floripa é um dos pontos preferidos dos visitantes para registrar a passagem pela Ilha da Magia. Localizado na região da Beira-Mar Norte, o letreiro proporciona um cenário urbano com a baía e a paisagem de Florianópolis ao fundo.',
     tip: 'Faça uma foto em frente ao letreiro e aproveite para caminhar pela Avenida Beira-Mar Norte.'
   },
@@ -28,15 +28,15 @@ window.CITY_DATA = [
     category: 'Atração',
     city: 'Florianópolis',
     address: 'Centro e outros pontos turísticos de Florianópolis - SC',
-    hours: 'Diariamente: acesso livre',
+    hours: 'Acesso 24h',
     price: 'Gratuito',
-    rating: '4.9 ★',
+    rating: '4.7 ★ (52 avaliações)',
     popularRank: 2,
     route: 2,
-    image: 'imagens/soubem_floripa.jpeg',
+    image: 'imagens/soubem_floripa.jpg',
     summary: 'Totem fotográfico que integra o movimento Sou Bem Floripa e se tornou um símbolo turístico da cidade.',
-    description: 'O movimento Sou Bem Floripa foi criado para incentivar pequenas atitudes de cidadania, convivência e cuidado com a cidade. Seus grandes totens com a mensagem “Sou Bem Floripa” passaram a ser utilizados pelos visitantes como cenários para fotografias. Entre os locais onde já foram instalados estão a Beira-Mar Norte, o Mirante do Morro da Lagoa e o Parque de Coqueiros.',
-    tip: 'Confira a localização atual do totem antes de montar seu roteiro, pois ele já foi instalado em diferentes pontos da cidade.'
+    description: 'O movimento Sou Bem Floripa foi criado para incentivar pequenas atitudes de cidadania, convivência e cuidado com a cidade. Seus grandes totens com a mensagem “Sou Bem Floripa” passaram a ser utilizados pelos visitantes como cenários para fotografias. Entre os locais onde já foram instalados estão a Beira-Mar Norte, o Mirante do Morro da Lagoa, o Parque de Coqueiros e no Parque da Luz (próximo à Ponte Hercílio Luz).',
+    tip: 'Procure visitar em horários de menor movimento, quando fica mais fácil conseguir uma foto sem muitas pessoas ao redor.'
   },
   {
     id: 'cafe_manha_kattamaram',
@@ -168,7 +168,7 @@ window.CITY_DATA = [
   },
   {
     id: 'freguesia_santo_antonio_lisboa',
-    name: 'Praia de Santo Antônio de Lisboa',
+    name: 'Santo Antônio de Lisboa',
     category: 'Natureza',
     city: 'Florianópolis',
     address: 'R. Quinze de Novembro, 140 - Santo Antônio de Lisboa, Florianópolis - SC',
@@ -177,7 +177,7 @@ window.CITY_DATA = [
     rating: '4.7 ★',
     popularRank: 1,
     route: 12,
-    image: 'imagens/santo_antonio_lisboa.jpeg',
+    image: 'imagens/santo_antonio_lisboa.jpg',
     summary: 'Uma das comunidades mais antigas de Florianópolis, conhecida pelo casario açoriano, artesanato, gastronomia e pôr do sol.',
     description: 'Santo Antônio de Lisboa preserva uma das mais importantes paisagens culturais de Florianópolis, marcada pela arquitetura colonial e pela forte influência açoriana. A região possui restaurantes especializados em frutos do mar e ostras, ateliês, artesanato e uma orla tranquila com belas vistas da Baía Norte.',
     tip: 'Chegue no final da tarde para caminhar pela orla e apreciar o famoso pôr do sol de Santo Antônio de Lisboa.'
