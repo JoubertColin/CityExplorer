@@ -156,6 +156,22 @@ window.CITY_DATA = [
     tip: 'Confira a seção de ofertas e promoções, que pode ser especialmente interessante para quem procura calçados da marca por preços diferenciados.'
   },
   {
+    id: 'cervejaria_edelbrau',
+    name: 'Cervejaria Edelbrau',
+    category: 'Gastronomia',
+    city: 'Nova Petrópolis',
+    address: 'Av. 15 de Novembro, 4024 - Nova Petrópolis RS',
+    hours: 'Diariamente: 09h às 17h',
+    price: 'Acesso a loja: Grátis. Visitação a Cervejaria R$ 79,00',
+    rating: '4.5 ★ (2k avaliações)',
+    popularRank: 10,
+    route: 10,
+    image: 'imagens/cervejaria-edelbrau.png',
+    summary: 'Cervejaria artesanal com loja em Nova Petrópolis RS, gastronomia e experiência interativa dedicada à cultura da cerveja.',
+    description: 'A Cervejaria Edelbrau oferece uma experiência interativa sobre a produção e a cultura da cerveja artesanal, com espaços temáticos, degustações e vista para a fábrica. O local também conta com loja e opções gastronômicas.',
+    tip: 'Reserve um tempo para fazer a Experiência Edelbrau e aproveitar as degustações de diferentes estilos de cerveja.'
+  },  
+  {
     id: 'mukli_alfajores',
     name: 'Mukli Alfajores',
     category: 'Gastronomia',
@@ -172,22 +188,6 @@ window.CITY_DATA = [
     tip: 'Além de experimentar os alfajores, aproveite a cafeteria e leve algumas unidades para continuar a experiência depois da viagem.'
   },
   {
-    id: 'cervejaria_edelbrau',
-    name: 'Cervejaria Edelbrau',
-    category: 'Gastronomia',
-    city: 'Nova Petrópolis',
-    address: 'Av. 15 de Novembro, 4024 - Nova Petrópolis RS',
-    hours: 'Diariamente: 09h às 17h',
-    price: 'Acesso a loja: Grátis. Visitação a Cervejaria R$ 79,00',
-    rating: '4.5 ★ (2k avaliações)',
-    popularRank: 10,
-    route: 10,
-    image: 'imagens/cervejaria-edelbrau.png',
-    summary: 'Cervejaria artesanal com loja em Nova Petrópolis RS, gastronomia e experiência interativa dedicada à cultura da cerveja.',
-    description: 'A Cervejaria Edelbrau oferece uma experiência interativa sobre a produção e a cultura da cerveja artesanal, com espaços temáticos, degustações e vista para a fábrica. O local também conta com loja e opções gastronômicas.',
-    tip: 'Reserve um tempo para fazer a Experiência Edelbrau e aproveitar as degustações de diferentes estilos de cerveja.'
-  },
-  {
     id: 'portico_gramado',
     name: 'Pórtico de Gramado',
     category: 'Atração',
@@ -197,10 +197,10 @@ window.CITY_DATA = [
     price: 'Gratuito',
     rating: '4.8 ★ (20k avaliações)',
     popularRank: 20,
-    route: 20,
+    route: 12,
     image: 'imagens/portico_gramado.jpg',
     summary: 'Portal de entrada de Gramado, decorado em estilo arquitetônico que remete à colonização europeia da região.',
     description: 'Gramado possui dois pórticos turísticos principais. O pórtico da entrada pela Nova Petrópolis apresenta inspiração bávara, enquanto o acesso pela Via Taquara possui características normandas. Ambos são tradicionais pontos para fotografias de chegada à cidade.',
     tip: 'Pare para fotografar o pórtico correspondente à estrada utilizada na chegada ou saída de Gramado.'
-  },
+  }
 ];
